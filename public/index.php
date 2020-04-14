@@ -56,7 +56,21 @@ mysqli_close($conn);
 ?>
                 <tbody>
             </table>
-            <div class="alert alert-primary text-center" role="alert">Use F5 para atualizar ou <a href="?r=1" class="alert-link">clique aqui</a>.</div>
+            <?php
+            if (!$_GET["r"])
+                echo '<div class="alert alert-primary text-center" role="alert">Use F5 para atualizar ou 
+                <a href="?r=1" class="alert-link">clique aqui para ativar atualização automática</a>.
+                </div>';
+            else
+                echo '<div class="alert alert-primary text-center" role="alert">Atualização automática ativada 
+                <a href="/" class="alert-link">clique aqui para desativar</a>.
+                </div>
+                <script>
+                setTimeout(function() {
+                    location.reload();
+                }, 3200);
+                </script>';
+            ?>
         </div>
     </body>
 </html>
