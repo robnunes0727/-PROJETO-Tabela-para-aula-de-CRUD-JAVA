@@ -1,6 +1,6 @@
-# tecnicas_aulas
+# Tabela para aula de CRUD JAVA
 
-Sisteminha criado para todos os alunos usarem a mesma db.
+Sisteminha criado para os alunos do meu grupo usarem a mesma db.
 
 Necessário configurar o arquivo config.ini.php.
 
